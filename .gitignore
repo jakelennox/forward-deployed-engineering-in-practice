@@ -1,0 +1,41 @@
+# Secrets and local environment (never commit real values; use .env.example)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Generated Halyard data (regenerate with HALYARD_SEED; never publish personal-looking data)
+data/generated/
+*.duckdb
+*.duckdb.wal
+*.ducklake
+*.parquet
+
+# Node.js / TypeScript (later implementation courses)
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+
+# Python (ecosystem-specific data/model tooling)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local models and caches
+.ollama/
+models/
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
