@@ -62,6 +62,16 @@ Every statement carries a label so a reviewer can see where it comes from:
 
 Where the three conflict, the order of precedence is: **access control and confidentiality → correctness of guidance → delivery date**. A date can move; a leak cannot be undone.
 
+## If delivery capacity halves
+
+The user outcome stays (faster access to approved, cited guidance), delivered to a smaller group; scope shrinks, safety does not.
+
+- **Stop first, in order:** support-ticket summarisation model → MCP server → HTTP API → sales onboarding → extra document domains → polish (UI styling, dashboards, conversational memory).
+- **Keep, unchanged:** permission tests on every retrieval path that ships; restricted-document deny cases and cross-group checks; the SME-reviewed 20-question evaluation set; a citation on every answer or explicit abstention; the stop condition and escalation route; a named on-call owner before release.
+- **Communicate:** the reduced scope goes to the sponsor for written sign-off (approval P7, pending); nothing is removed silently. If the reduced scope still cannot meet the date, the date moves, not the gates.
+
+The reasoning behind each cut (outcome link, cost, risk and ordering) is in [role-boundaries.md](role-boundaries.md#capacity-reduction-decision).
+
 ## Boundary challenge
 
 Studying alone, so the sponsor challenge is self-posed using the course's capacity scenario.

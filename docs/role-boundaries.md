@@ -82,14 +82,18 @@ No approval below has been granted. Each row stays **Pending** until the approve
 
 **Principle:** keep the user outcome (faster access to approved, cited guidance) for a smaller group; shrink scope, not safety. Tell the sponsor exactly what was cut and get it approved (P7); never remove scope silently.
 
+**Ordering rule:** each candidate cut is judged on its *outcome link* (how much it contributes to faster access to approved, cited guidance for the pilot group), its *safety cost* (how much permission-testing and evaluation work it adds) and its *novelty risk* (how likely it is to fail in unfamiliar ways). Weak outcome link plus high safety cost goes first; anything that makes the service safe or verifiable is never cut.
+
 **What I stop doing first, in order:**
 
-1. **Support-ticket summarisation model.** Highest novelty and evaluation cost, least tied to the Release 1 outcome. Defer entirely.
-2. **MCP server.** An additional retrieval path that would need its own permission tests. Defer until a consumer exists.
-3. **HTTP API for other tools.** Defer; the pilot uses a single interface, so one retrieval path to secure and test.
-4. **Sales onboarding.** Sales sources (rate agreements, contract terms) carry the most complex entitlements. Defer to Release 2.
-5. **Multiple document domains.** Pilot a single domain, operational SOPs and handling policies, chosen because most documents share one access group.
-6. **Polish:** custom UI styling, analytics dashboards, conversational memory.
+1. **Support-ticket summarisation model** | *Outcome link*: none for Release 1; it summarises tickets, it does not help anyone find guidance | *Cost*: highest; needs its own training data, its own evaluation set and legal review, because tickets contain customer names and complaints (personal data, excluded by the charter) | *Risk*: a new model is the least predictable component in the system | *Why first*: largest effort saved at zero cost to the pilot outcome. Defer entirely.
+2. **MCP server** | *Outcome link*: none yet; it exposes Ask Halyard to other AI agents and no agent consumer exists at Halyard | *Cost*: every retrieval path needs its own permission tests, and an MCP path is queried by an agent rather than a person, so the tests must prove the agent cannot reach documents its user is not entitled to, which is harder than testing a UI | *Risk*: additional attack surface | *Why second*: attack surface with no current user. Defer until a consumer exists.
+3. **HTTP API for other internal tools** | *Outcome link*: indirect; it serves future integrations, not the pilot coordinators, who use one interface | *Cost*: a second retrieval path to secure and test, plus versioning, authentication and documentation | *Risk*: same class as MCP, a further path where filtering could be bypassed | *Why third*: an API has clearer near-term consumers (for example an internal portal) than MCP, so it is the more likely of the two to return first. Defer.
+4. **Sales onboarding** | *Outcome link*: real, because sales staff are named users in the brief, which is why it is cut later than the retrieval paths | *Cost*: sales content (rate agreements, contract terms, customer-specific pricing) has the most complex entitlements, often visible only to the account owner, so the permission test matrix grows sharply | *Risk*: highest chance of a cross-user leak if entitlements are mapped wrongly | *Why fourth*: deferring keeps the user outcome for operations while avoiding the hardest entitlement work. Sales join in Release 2 with their own gate.
+5. **Extra document domains** | *Outcome link*: more coverage, but the pilot can prove the outcome on one domain | *Cost*: every domain needs a named authoritative owner (charter A1), ingestion work and SME questions | *Risk*: conflicting or unowned guidance across domains | *Why fifth*: one domain is enough to prove the outcome. Keep operational SOPs and handling policies, chosen because most documents share one access group, so the permission suite stays small but real, with deny cases for the few restricted items.
+6. **Polish (custom UI styling, analytics dashboards, conversational memory)** | *Outcome link*: comfort rather than capability; a plain interface still delivers a cited answer | *Cost*: low per item | *Risk*: conversational memory can mix sources across turns, so leaving it out also simplifies evaluation | *Why last*: cheapest items, so cutting them saves the least.
+
+Cutting a whole retrieval path is legitimate because its tests go with it; cutting tests on a path that still ships is not.
 
 **What stays, unchanged:**
 

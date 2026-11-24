@@ -8,7 +8,7 @@ Turn the course's role comparisons into delivery accountability for Ask Halyard:
 2. Built the [responsibility matrix](../role-boundaries.md#responsibility-matrix) for the five activities, separating Responsible (does the work) from Accountable (authorised to approve), with one accountable role per activity. The exception is incident response, where accountability splits by incident *type* (security vs service) and is never shared for one incident.
 3. Listed the [duties that remain with customer security and operations](../role-boundaries.md#duties-that-remain-with-customer-security-and-operations) even when the FDE has the technical ability to perform them.
 4. Created an [approvals register](../role-boundaries.md#approvals-register) of eight approvals (P1 to P8), all marked **Pending**, linked to charter assumptions A1, A2, A5 and A7. No approval was invented.
-5. Wrote the [capacity reduction decision](../role-boundaries.md#capacity-reduction-decision): an ordered list of what to stop first, the six gates that stay, and the rule that the date moves before the gates do.
+5. Wrote the [capacity reduction decision](../role-boundaries.md#capacity-reduction-decision): an ordering rule (outcome link, safety cost, novelty risk), an ordered list of what to stop first with the outcome link, cost, risk and reason for each item's position, the six gates that stay, and the rule that the date moves before the gates do.
 6. Separated external research from my Halyard assumptions in [Sources and interpretation](../role-boundaries.md#sources-and-interpretation).
 7. Tagged the module's final commit `module-01`.
 

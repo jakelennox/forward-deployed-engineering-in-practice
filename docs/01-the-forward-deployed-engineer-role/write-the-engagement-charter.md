@@ -11,7 +11,8 @@ Define embedded ownership for Ask Halyard in a bounded charter: a sponsor, a mea
 5. Listed exclusions beyond the starter (binding quotes, external customers, HR/personal data, training on customer data without legal approval).
 6. Wrote seven open assumptions (A1 to A7), each with an owner, verification method and status.
 7. Reviewed the charter against the three tensions (sponsor speed, legal confidentiality, operations reliability) and stated an order of precedence.
-8. Challenged the boundary: studying alone, I posed the sponsor's request to drop permission tests after capacity halves, and wrote a response that keeps the date and the permission gate by narrowing scope.
+8. Answered "what would you stop doing first if delivery capacity halves" in a dedicated [charter section](../engagement-charter.md#if-delivery-capacity-halves): ordered stop-first list, the six gates that stay, and sponsor sign-off, linking to the full reasoning in [role-boundaries.md](../role-boundaries.md#capacity-reduction-decision).
+9. Challenged the boundary: studying alone, I posed the sponsor's request to drop permission tests after capacity halves, and wrote a response that keeps the date and the permission gate by narrowing scope.
 
 ## Commands
 ~~~bash
@@ -48,8 +49,9 @@ Charter sections:
 24:## Charter
 43:## Open assumptions
 55:## Review against stakeholder tensions
-65:## Boundary challenge
-88:## Change log
+65:## If delivery capacity halves
+75:## Boundary challenge
+98:## Change log
 ~~~
 
 Summary of the charter's key commitments:
@@ -61,7 +63,8 @@ Summary of the charter's key commitments:
 | Exclusions | Shipment changes, legal/customs/contract advice, binding quotes, external customers, HR/personal data, training on customer data |
 | Decision rights | Sponsor: scope and go/no-go; security: access, with release veto; ops lead: workflow and acceptance; source owners: authority; legal: confidentiality |
 | Stop condition | Any permission leak pauses the affected path until security signs off the fix and regression test |
-| Approvals | None recorded as granted; 3 explicit "pending" markers |
+| Capacity halves | Stop first: ticket summariser → MCP server → HTTP API → sales onboarding → extra domains → polish; all six safety gates kept; sponsor sign-off (P7) pending |
+| Approvals | None recorded as granted; explicit "pending" markers on sponsor approval, the reduced scope and the change log |
 
 Boundary challenge (full text in the charter):
 
