@@ -1,8 +1,8 @@
 # Forward Deployed Engineering in Practice
 
-Portfolio repository for the *Forward Deployed Engineering in Practice* course. I act as the embedded forward deployed engineer (FDE) for **Halyard Freight**, a fictional mid-sized freight forwarder, and own the delivery of **Ask Halyard**: a permission-aware knowledge assistant for sales and operations staff, with citations, an HTTP API, an MCP server and, later, a small model that summarises support tickets.
+Portfolio repository for the *Forward Deployed Engineering in Practice* course. The embedded engineer works for **Halyard Freight**, a fictional mid-sized freight forwarder, and owns the delivery of **Ask Halyard**: a permission-aware assistant that gives sales and operations staff the current, approved answer with its source, showing each person only what they may see.
 
-This course produces delivery artefacts (Markdown), not an implemented assistant. Implementation follows in later courses.
+This course produces Markdown documents only; there is no application code.
 
 > All company, people and data in this repository are fictional. No secrets, tokens, account identifiers or real client material are committed.
 
@@ -10,9 +10,10 @@ This course produces delivery artefacts (Markdown), not an implemented assistant
 
 | Module | Artefact | Status |
 |---|---|---|
-| 01 | [Engagement charter](docs/engagement-charter.md) | Draft v0.1, sponsor approval pending |
-| 01 | [Role boundaries](docs/role-boundaries.md) | Draft v0.1, approvals pending |
-| 02+ | Discovery canvas, data inventory, decomposition memo, 20-question evaluation plan, production readiness plan, trade-off ADR, demo script, operational handover pack | Not started |
+| 01 | [Engagement charter](docs/engagement-charter.md) | Draft, sponsor approval pending |
+| 01 | [Role boundaries](docs/role-boundaries.md) | Draft, approvals pending |
+| All | [Business context](docs/business-context.md), [glossary](docs/glossary.md), [evidence labels](docs/evidence-labels.md) | Reference, updated each module |
+| 02 to 07 | Discovery canvas, question log, data inventory, decomposition memo, eval plan, production readiness plan, ADR, demo script, limitations statement, handover pack, runbook, expansion recommendation | Not started |
 
 ## Repository conventions
 
@@ -35,4 +36,4 @@ Read the Markdown in any editor with preview, or on GitHub. Requirements: Git an
 
 ## Sources
 
-External research inputs (FDE Skills Report 2026, AI Engineer Insights "Forward-Deployed AI Engineer" July 2026, InterviewBit "Forward Deployed Engineer Skills" 2026) are cited as supplied by the course synthesis. Everything about Halyard Freight is a fictional assumption introduced for the exercises and is labelled as such in each artefact.
+Everything about Halyard Freight is fictional. Course-supplied context is in [docs/business-context.md](docs/business-context.md); each artefact labels what the embedded engineer assumes and what is still pending approval.
