@@ -23,16 +23,25 @@ git switch main
 git merge --ff-only 01-the-forward-deployed-engineer-role
 git branch -d 01-the-forward-deployed-engineer-role
 git tag module-01
+git switch -c 01-the-forward-deployed-engineer-role
+git add -A
+git commit -F -   # "01-the-forward-deployed-engineer-role: add review index, label formatting and provisional evidence rules"
+git switch main
+git merge --ff-only 01-the-forward-deployed-engineer-role
+git branch -d 01-the-forward-deployed-engineer-role
+git tag -f module-01
+git push origin main
+git push origin module-01
 ~~~
 
 ## Results
 Artefact: [docs/role-boundaries.md](../role-boundaries.md).
 
-**Self-challenge (sponsor):** "Delivery capacity has halved and the pilot date is fixed. Cut the permission tests for now; they can come back before the wider rollout."
+**Self-challenge (sponsor)**: "Delivery capacity has halved and the pilot date is fixed. Cut the permission tests for now; they can come back before the wider rollout."
 
-**Response:** The permission tests stay; the workflow narrows instead. The pilot drops old support tickets and the customer records system as sources and answers from approved policies in shared folders only; operations staff pilot first and sales follow once their access rules are tested. That makes the permission test set smaller, but it still covers every user group in the pilot, including the check that legal documents and their titles stay hidden. The user outcome holds for the pilot group: a current, approved, cited answer, faster than today. The reduced scope goes to the sponsor for sign-off (approval pending); if it still cannot meet the date, the date moves.
+**Response**: The permission tests stay; the workflow narrows instead. The pilot drops old support tickets and the customer records system as sources and answers from approved policies in shared folders only; operations staff pilot first and sales follow once their access rules are tested. That makes the permission test set smaller, but it still covers every user group in the pilot, including the check that legal documents and their titles stay hidden. The user outcome holds for the pilot group: a current, approved, cited answer, faster than today. The reduced scope goes to the sponsor for sign-off (approval pending); if it still cannot meet the date, the date moves.
 
 ## Observations
-- Hardest to separate: deployment. The embedded engineer prepares the release and could technically push it, customer IT makes and approves the change, the sponsor decides whether the scope is worth releasing and customer security can block it on access grounds. Writing "can stop a release but approves none" for the embedded engineer made the split clear.
+- *Hardest to separate*: deployment. The embedded engineer prepares the release and could technically push it, customer IT makes and approves the change, the sponsor decides whether the scope is worth releasing and customer security can block it on access grounds. Writing "can stop a release but approves none" for the embedded engineer made the split clear.
 - Incident response needed two accountable roles, split by incident type, so that each incident still has exactly one.
-- Follow-up: confirm in discovery that customer IT, not the sponsor, approves changes at Halyard.
+- *Follow-up*: confirm in discovery that customer IT, not the sponsor, approves changes at Halyard.

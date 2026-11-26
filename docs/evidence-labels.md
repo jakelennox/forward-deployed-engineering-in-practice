@@ -22,3 +22,12 @@ How the engineer knows each statement: each label names a kind of evidence and s
 | Requires customer validation | Only the customer's real data or people can confirm it | later module |
 | Tabletop | You walked through it on paper with simulated numbers | later module |
 | Storyboard | It is a mock-up of a screen or response | later module |
+
+## Provisional rules (pending module 02)
+
+Not stated by the course; proposed by the embedded engineer to fill gaps in module 01. Re-checked against each new module's text; any difference is flagged and the rule updated or dropped.
+
+- **Evidence strength**: supplied fact over interview claim over assumption; where a measured and a claimed figure disagree, the measured one is used and the gap is flagged. Inferred from the label definitions ("nobody measured it"). (assumption)
+- **Decision precedence**: the Accountable role for the activity in [role-boundaries.md](role-boundaries.md) decides; the permission gate is never traded for speed or scope (module 01: "the permission tests stay"; the reply "must keep the permission gate"). (assumption)
+- **Stakeholder conflicts**: where two stakeholders' claims contradict each other, or a claim contradicts a supplied fact, both sources are recorded and the conflict is flagged to the engineer; neither is chosen silently. (assumption)
+- **One label per line**: the most cautious label that applies, e.g. `(approval pending)` over `(decision)` until sign-off happens. (assumption)

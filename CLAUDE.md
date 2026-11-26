@@ -4,6 +4,7 @@ Course portfolio: the learner acts as the embedded engineer for **Halyard Freigh
 
 ## Naming
 - Never name the repo owner in repo content. Refer to the creator/author/editor as "the engineer" or "the embedded engineer"; use "embedded engineer" in place of "FDE" in artefacts & evidence.
+- Repo content covers only the hypothetical Halyard engagement & the course's conventions. Never reference the engineer's personal note-taking tools, private notes, or meetings & reviews held outside the course; keep that material outside the repo.
 - Third person everywhere in repo docs (README, artefacts, evidence): "the embedded engineer", never "I/my/me".
 - Exempt: git commit author/identity, the GitHub username in URLs, verbatim course text in `docs/sources/` & `docs/glossary.md`, published titles & quoted course text containing "FDE".
 
@@ -23,12 +24,13 @@ Course portfolio: the learner acts as the embedded engineer for **Halyard Freigh
 
 ## Deliverables (course outcome)
 - 14 documents (module 01 table): 01 `engagement-charter.md`, `role-boundaries.md`; 02 `discovery-canvas.md`, `discovery-question-log.md`; 03 `data-inventory.md`, `decomposition-memo.md`; 04 `eval-plan.md`; 05 `production-readiness-plan.md`, `adr/0001-permission-aware-policy-pilot.md`; 06 `demo-script.md`, `limitations-statement.md`; 07 `handover-pack.md`, `runbook.md`, `expansion-recommendation.md`. Plus 1 evidence file per exercise.
-- Module 01 (reworked 2026-11-26 to current course text; committed & tagged `module-01` locally; push pending): `docs/engagement-charter.md`, `docs/role-boundaries.md`.
+- Module 01 (reworked 2026-11-26 to current course text; committed, tagged `module-01` & pushed 2026-11-26): `docs/engagement-charter.md`, `docs/role-boundaries.md`.
 - On completion the engineer submits the repo URL.
 
 ## Repository rules (from course instructions)
 - Repo: public, named `forward-deployed-engineering-in-practice`, default branch `main`. All course work lives here.
-- README: short course description & how to review/run the project. Keep it accurate: reviewers clone, check out each tag `module-01` → `module-07`, read evidence files & follow the README index to each document. Only committed & pushed work is credited.
+- README: short course description & how to review the project. Keep it accurate: reviewers clone, check out each tag `module-01` → `module-07`, read evidence files & follow the README index to each document. Only committed & pushed work is credited.
+- README "Review index": 1 row per exercise w/ module, exercise name, link to its artefact, link to its evidence file & status; plus links to the reference docs (business context, glossary, evidence labels, evidence template). Update it in the same commit as any added, renamed or status-changed document; every committed artefact & evidence file must be reachable from it.
 - Generated code, config & docs live in the repo, built up module by module.
 
 ## Evidence files
@@ -65,4 +67,5 @@ Course portfolio: the learner acts as the embedded engineer for **Halyard Freigh
 
 ## Writing conventions for repo docs
 - British English; YYYY-MM-DD; no em dashes.
+- Bullet or numbered item w/ a title before a colon: format the title, colon outside the markup. Bold for field, role or item names (`- **Sponsor**: ...`, `1. **Polish**: ...`, `**Reply**: ...`); italics for note-style prefixes in Observations or asides (`- *Follow-up*: ...`, `- *Least sure line*: ...`). Exempt: verbatim course text, code blocks.
 - Markdown tables are allowed in repo artefacts (responsibility matrices, registers); the no-tables rule applies to chat replies only.
